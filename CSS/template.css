@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.navBar {
+  background-color: black;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navBar ul {
+  display: flex;
+  justify-content: left;
+  list-style: none;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  position: relative;
+}
+
+.navBar ul li a {
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 15px;
+  position: relative;
+}
+
+.navBar i {
+  padding: 20px;
+  font-size: 20px;
+  height: 55px;
+  /* text-align: center; */
+  margin: -15px;
+  margin-right: -10px;
+}
+.navBar i a:hover {
+  background-color: red;
+}
+.navBar ul li a {
+  text-decoration-line: none;
+}
+.navBar ul li a:hover {
+  background-color: #cccccc;
+  color: black;
+}
+
+.yyyy {
+  position: absolute;
+  content: "";
+  left: 423px;
+  top: 50px;
+  width: 200px;
+  height: 120px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  display: none;
+}
+
+.yyyy li {
+  color: black;
+
+  padding: 11px;
+}
+.yyyy li:hover {
+  color: black;
+  background-color: #cccccc;
+}
+
+.yyyy:hover {
+  display: block;
+}
+
+@media screen and (max-width: 480px) {
+  .navBar ul {
+    display: none;
+  }
+  .theimage p,
+  h3 {
+    font-size: 10px;
+  }
+}
+
+.theimage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.conatiner {
+  margin: 20px auto;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1.5;
+  text-align: center;
+}
+.conatiner p {
+  font-size: 15px;
+  margin: 10px;
+}
+
+.conatiner h4 {
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.conatiner h6 {
+  margin-bottom: 10px;
+  color: gray;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.pictures {
+  display: grid;
+  row-gap: 30px;
+  column-gap: 30px;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 20px auto;
+  width: 800px;
+}
+.pictures img {
+  width: 250px;
+}
+
+.theimage img {
+  vertical-align: middle;
+  width: 100%;
+  z-index: -1;
+}
+
+/* sdfdsffs */
+
+.gallery {
+  width: 100%;
+  display: flex;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery div {
+  display: grid;
+  width: 100%;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  padding: 10px;
+  flex: none;
+}
+
+.gallery div img {
+  width: 100%;
+  filter: grayscale(100%);
+  transition: transform 1s;
+}
+
+@media screen and (max-width: 500px) {
+  .gallery div img {
+    width: 300px;
+  }
+  .gallery div {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+  }
+}
+
+.gallerybig {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: auto auto 20px auto;
+}
+
+#BACK,
+#NEXT {
+  cursor: pointer;
+  margin: 10px;
+}
+#NEXT {
+  left: 150px;
+  top: 305px;
+}
+#BACK {
+  right: 150px;
+  top: 305px;
+}
+
+.gallery div img:hover {
+  filter: grayscale(0);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.gallerybig ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  position: absolute;
+  bottom: 170px;
+}
+
+.gallerybig ul li {
+  background-color: rgb(79, 79, 79);
+  color: rgb(171, 169, 169);
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.gallerybig ul li:hover {
+  background-color: rgb(111, 110, 110);
+}
+
+.active {
+  background-color: black;
+}
+
+.little {
+  display: flex;
+  justify-content: center;
+  opacity: 0.5;
+}
+
+.containertwo {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+}
+
+.containertwo .ss1 {
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+}
+
+.containerthings {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 20px;
+  gap: 50px;
+}
+
+@media screen and (max-width: 830px) {
+  .containerthings {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 560px) {
+  .containerthings {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.containerthings div {
+  /* display: flex; */
+  /* flex-direction: column; */
+  background-color: white;
+  color: black;
+  line-height: 1.8;
+  margin: auto;
+}
+
+.containerthings div img {
+  width: 100%;
+}
+.containerthings div p,
+h3 {
+  padding: 10px;
+}
+
+.containerthings div button {
+  margin: 10px;
+  padding: 5px;
+  width: 100px;
+  background-color: black;
+  border: none;
+  color: white;
+  cursor: pointer;
+  height: 37px;
+}
+.containerthings div button:hover {
+  background-color: #cccccc;
+  color: black;
+}
+
+.containerthings h6 {
+  opacity: 0.5;
+  padding: 10px;
+}
