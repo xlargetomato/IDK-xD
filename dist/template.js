@@ -18,3 +18,7 @@ back.addEventListener("click", function (sus) {
 next.addEventListener("click", function (sus) {
   galleryxd.scrollLeft -= 1000;
 }); //# sourceMappingURL=template.js.map
+let sss = document.querrySelector(".sss");
+sss.addEventListener("click",function(){
+  window.open("/susthings/index.html")
+})
